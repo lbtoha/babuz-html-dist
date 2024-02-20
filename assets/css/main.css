@@ -1458,6 +1458,10 @@ button,
   bottom: -1.75rem;
 }
 
+.-left-20{
+  left: -5rem;
+}
+
 .-left-36{
   left: -9rem;
 }
@@ -1474,12 +1478,20 @@ button,
   right: -3.5rem;
 }
 
+.-right-20{
+  right: -5rem;
+}
+
 .-top-\[40\%\]{
   top: -40%;
 }
 
 .bottom-0{
   bottom: 0px;
+}
+
+.bottom-20{
+  bottom: 5rem;
 }
 
 .bottom-8{
@@ -1500,6 +1512,10 @@ button,
 
 .left-1\/2{
   left: 50%;
+}
+
+.left-25{
+  left: 100px;
 }
 
 .left-5{
@@ -1888,6 +1904,11 @@ button,
   height: 200px;
 }
 
+.size-\[60px\]{
+  width: 60px;
+  height: 60px;
+}
+
 .h-0{
   height: 0px;
 }
@@ -2023,6 +2044,10 @@ button,
   max-width: 150px;
 }
 
+.max-w-\[200px\]{
+  max-width: 200px;
+}
+
 .max-w-\[220px\]{
   max-width: 220px;
 }
@@ -2121,6 +2146,10 @@ button,
 
 .max-w-\[633px\]{
   max-width: 633px;
+}
+
+.max-w-\[636px\]{
+  max-width: 636px;
 }
 
 .max-w-\[685px\]{
@@ -2708,18 +2737,6 @@ button,
 
 .bg-\[linear-gradient\(0deg\2c rgba\(18\2c 18\2c 18\2c 0\.80\)_0\%\2c rgba\(18\2c 18\2c 18\2c 0\.20\)_100\%\)\]{
   background-image: linear-gradient(0deg,rgba(18,18,18,0.80) 0%,rgba(18,18,18,0.20) 100%);
-}
-
-.bg-\[url\(\'\.\/public\/images\/hover-image-4\.png\'\)\]{
-  background-image: url('../images/hover-image-4-A549btvp.png');
-}
-
-.bg-\[url\(\'\/images\/hover-image-2\.png\'\)\]{
-  background-image: url('/images/hover-image-2.png');
-}
-
-.bg-\[url\(\'\/images\/hover-image-3\.png\'\)\]{
-  background-image: url('/images/hover-image-3.png');
 }
 
 .bg-\[url\(\'\/images\/hover-image\.png\'\)\]{
@@ -5059,8 +5076,20 @@ i::before {
   border: none;
 }
 
-.test-active {
-  background: #ffce32;
+.home-one-hover-image-one {
+  background-image: url(../images/hover-image-LDYUp_xl.png);
+}
+
+.home-one-hover-image-two {
+  background-image: url(../images/hover-image-2-9e50t5Xq.png);
+}
+
+.home-one-hover-image-three {
+  background-image: url(../images/hover-image-3-CPjpfplB.png);
+}
+
+.home-one-hover-image-four {
+  background-image: url(../images/hover-image-4-A549btvp.png);
 }
 
 .before\:theme-transition-3::before{
@@ -7160,6 +7189,10 @@ i::before {
     display: flex;
   }
 
+  .max-xl\:hidden{
+    display: none;
+  }
+
   .max-xl\:h-fit{
     height: -moz-fit-content;
     height: fit-content;
@@ -8877,6 +8910,10 @@ i::before {
 
   .xl\:pb-15{
     padding-bottom: 60px;
+  }
+
+  .xl\:pb-\[157px\]{
+    padding-bottom: 157px;
   }
   .xl\:spt40px{
     padding-top: 1.25rem;
