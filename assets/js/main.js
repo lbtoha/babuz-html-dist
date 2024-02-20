@@ -20076,11 +20076,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
   const currentUrl = window.location.pathname;
+  const withoutSlash = currentUrl.split("/")[1];
   const singleMenu = document.querySelectorAll(".single-menu");
   const menuItems = document.querySelectorAll(".menu li a");
   menuItems.forEach((item) => {
     const menuItemUrl = item.getAttribute("href");
-    if (currentUrl === menuItemUrl) {
+    if (withoutSlash === menuItemUrl) {
       item.parentElement.classList.add("active-nav");
       item.parentElement.parentElement.parentElement.querySelector("li p").classList.add("parent-nav-active");
       item.parentElement.classList.add("parent-nav-active");
@@ -20088,7 +20089,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   singleMenu.forEach((item) => {
     const menuItemUrl = item.getAttribute("href");
-    if (currentUrl === menuItemUrl) {
+    if (withoutSlash === menuItemUrl) {
       item.classList.add("parent-nav-active");
     }
   });
@@ -20126,7 +20127,8 @@ document.addEventListener("DOMContentLoaded", function() {
     mobileMenuItems.forEach((item) => {
       const menuItemUrl = item.getAttribute("href");
       const currentUrl2 = window.location.pathname;
-      if (currentUrl2 === menuItemUrl) {
+      const withoutSlash2 = currentUrl2.split("/")[1];
+      if (withoutSlash2 === menuItemUrl) {
         item.parentElement.classList.add("mobile-nav-active");
         mobileMenu.classList.add("parent-nav-active");
       }
