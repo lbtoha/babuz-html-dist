@@ -20076,7 +20076,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
   const currentUrl = window.location.pathname;
-  const withoutSlash = currentUrl.split("/")[1];
+  let withoutSlash;
+  if (currentUrl.length > 1) {
+    withoutSlash = currentUrl.split("/")[1];
+  } else {
+    withoutSlash = currentUrl;
+  }
   const singleMenu = document.querySelectorAll(".single-menu");
   const menuItems = document.querySelectorAll(".menu li a");
   menuItems.forEach((item) => {
@@ -20127,7 +20132,12 @@ document.addEventListener("DOMContentLoaded", function() {
     mobileMenuItems.forEach((item) => {
       const menuItemUrl = item.getAttribute("href");
       const currentUrl2 = window.location.pathname;
-      const withoutSlash2 = currentUrl2.split("/")[1];
+      let withoutSlash2;
+      if (currentUrl2.length > 1) {
+        withoutSlash2 = currentUrl2.split("/")[1];
+      } else {
+        withoutSlash2 = currentUrl2;
+      }
       if (withoutSlash2 === menuItemUrl) {
         item.parentElement.classList.add("mobile-nav-active");
         mobileMenu.classList.add("parent-nav-active");

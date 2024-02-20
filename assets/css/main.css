@@ -2116,12 +2116,12 @@ button,
   max-width: 485px;
 }
 
-.max-w-\[505px\]{
-  max-width: 505px;
-}
-
 .max-w-\[519px\]{
   max-width: 519px;
+}
+
+.max-w-\[550px\]{
+  max-width: 550px;
 }
 
 .max-w-\[585px\]{
