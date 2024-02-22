@@ -335,11 +335,11 @@
           >
             <div class="space-y-2">
               <span
-                class="block h-1 w-10 origin-center rounded-full bg-secondary transition-transform ease-in-out group-hover:translate-y-1.5 group-hover:rotate-45"
+                class="block h-1 w-10 origin-center rounded-full bg-secondary transition-transform ease-in-out"
               >
               </span>
               <span
-                class="block h-1 w-8 origin-center rounded-full bg-accent-3 transition-transform ease-in-out group-hover:w-10 group-hover:-translate-y-1.5 group-hover:-rotate-45"
+                class="block h-1 w-8 origin-center rounded-full bg-accent-3 transition-transform ease-in-out"
               >
               </span>
             </div>
@@ -361,12 +361,14 @@
                 />
               </a>
             </div>
-            <div class="min-h-screen rounded-xl bg-white-1 p-2 pt-10">
+            <div
+              class="mobile-menu-container min-h-screen rounded-xl bg-white-1 p-2 pt-10"
+            >
               <ul
                 data-lenis-prevent
                 class="mobile-nav-dropdown theme-transition-3 flex flex-col"
               >
-                <li>
+                <li class="theme-transition-3">
                   <p
                     class="mobile-nav-list-parent theme-transition-3 relative z-10 my-1 flex cursor-pointer items-center justify-between rounded-md border-b bg-secondary/20 px-8 py-5"
                   >
@@ -744,7 +746,7 @@
                     class="popup-btn flex items-center rounded-full bg-white-1 p-2 leading-none sm:p-3"
                   >
                     <i
-                      class="ti ti-player-play-filled text-[24px] text-accent-3"
+                      class="ti ti-player-play-filled text-[20px] text-accent-3 md:text-[24px]"
                     >
                     </i>
                   </button>
@@ -777,7 +779,7 @@
               <h5 class="h3 title-animation title-anim-active font-medium">
                 100% Capital Protection
               </h5>
-              <p class="m-text fade-top mt-6 text-black-3">
+              <p class="m-text fade-top mt-6 text-black-3 max-xs:px-2">
                 Rest easy knowing that your investments are 100% protected with
                 our exclusive Capital Protection guarantee.
               </p>
@@ -985,12 +987,13 @@
       >
         <iframe src="https://youtube.com/embed/4DCTTrGjGU4" class="video">
         </iframe>
+
+        <button
+          class="close-btn group theme-transition-3 absolute -right-16 top-0 z-40 block rounded-full bg-black-4 p-3 text-white-1 hover:bg-accent-3 hover:text-black-4"
+        >
+          <i class="ti ti-x text-[28px]"></i>
+        </button>
       </div>
-      <button
-        class="close-btn absolute right-[20%] top-[10%] z-40 block h-10 w-20 bg-black-4 px-2 py-1 text-white-1"
-      >
-        close
-      </button>
     </div>
 
   </body>

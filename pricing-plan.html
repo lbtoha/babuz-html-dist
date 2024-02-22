@@ -335,11 +335,11 @@
           >
             <div class="space-y-2">
               <span
-                class="block h-1 w-10 origin-center rounded-full bg-secondary transition-transform ease-in-out group-hover:translate-y-1.5 group-hover:rotate-45"
+                class="block h-1 w-10 origin-center rounded-full bg-secondary transition-transform ease-in-out"
               >
               </span>
               <span
-                class="block h-1 w-8 origin-center rounded-full bg-accent-3 transition-transform ease-in-out group-hover:w-10 group-hover:-translate-y-1.5 group-hover:-rotate-45"
+                class="block h-1 w-8 origin-center rounded-full bg-accent-3 transition-transform ease-in-out"
               >
               </span>
             </div>
@@ -361,12 +361,14 @@
                 />
               </a>
             </div>
-            <div class="min-h-screen rounded-xl bg-white-1 p-2 pt-10">
+            <div
+              class="mobile-menu-container min-h-screen rounded-xl bg-white-1 p-2 pt-10"
+            >
               <ul
                 data-lenis-prevent
                 class="mobile-nav-dropdown theme-transition-3 flex flex-col"
               >
-                <li>
+                <li class="theme-transition-3">
                   <p
                     class="mobile-nav-list-parent theme-transition-3 relative z-10 my-1 flex cursor-pointer items-center justify-between rounded-md border-b bg-secondary/20 px-8 py-5"
                   >
@@ -624,7 +626,7 @@
 
     <!--  pricing plan -->
     <section
-      class="spy120px relative z-10 overflow-hidden after:absolute after:bottom-0 after:-z-10 after:h-[35%] after:w-full after:bg-accent-3/15"
+      class="spy120px relative z-10 overflow-hidden bg-white-4 after:absolute after:bottom-0 after:-z-10 after:h-[35%] after:w-full after:bg-accent-3/15"
     >
       <div class="container">
         <div class="flex flex-col items-center justify-center">
@@ -640,14 +642,14 @@
             Use customer data to build great and solid product experiences that
             convert.
           </p>
-          <div class="mt-5 flex items-center gap-8">
+          <div class="mt-5 flex items-center gap-4 sm:gap-8">
             <button
-              class="spx24px spy12px l-text theme-transition-3 border border-accent-3 bg-accent-3 !px-12 py-4 capitalize text-accent-2 hover:bg-accent-3"
+              class="spx24px spy12px tab-links button-weekly l-text theme-transition-3 border border-accent-3 bg-accent-3 !px-12 py-4 capitalize text-accent-2 hover:bg-accent-3"
             >
               Weekly
             </button>
             <button
-              class="spx24px spy12px l-text theme-transition-3 border border-accent-3 bg-transparent !px-12 py-4 capitalize text-accent-2 hover:bg-accent-3"
+              class="spx24px tab-links spy12px button-yearly l-text theme-transition-3 border border-accent-3 bg-transparent !px-12 py-4 capitalize text-accent-2 hover:bg-accent-3"
             >
               yearly
             </button>
@@ -664,7 +666,7 @@
               </div>
               <div class="mt-3 flex items-end">
                 <p
-                  class="d4 leading-0 text-primaryColor theme-transition-4 font-semibold"
+                  class="d4 leading-0 text-primaryColor price-one theme-transition-4 font-semibold"
                 >
                   $10
                 </p>
@@ -729,7 +731,7 @@
               </div>
               <div class="mt-3 flex items-end">
                 <p
-                  class="d4 leading-0 text-primaryColor theme-transition-4 font-semibold"
+                  class="d4 leading-0 text-primaryColor price-two theme-transition-4 font-semibold"
                 >
                   $30
                 </p>
@@ -784,7 +786,7 @@
               </div>
               <div class="mt-3 flex items-end">
                 <p
-                  class="d4 leading-0 text-primaryColor theme-transition-4 font-semibold"
+                  class="d4 leading-0 text-primaryColor price-three theme-transition-4 font-semibold"
                 >
                   $75
                 </p>

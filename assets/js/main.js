@@ -20055,24 +20055,24 @@ document.addEventListener("DOMContentLoaded", function() {
     const desktopNav = document.querySelector(".desktop-nav");
     const loginButton = document.querySelector(".home-three-login");
     if (scrollHeight > 50) {
-      desktopNav.classList.add("bg-white-1");
+      desktopNav == null ? void 0 : desktopNav.classList.add("bg-white-1");
       loginButton == null ? void 0 : loginButton.classList.remove("text-white-1");
       loginButton == null ? void 0 : loginButton.classList.add("text-black-4");
     } else {
       loginButton == null ? void 0 : loginButton.classList.remove("text-black-4");
       loginButton == null ? void 0 : loginButton.classList.add("text-white-1");
-      desktopNav.classList.remove("bg-white-1");
+      desktopNav == null ? void 0 : desktopNav.classList.remove("bg-white-1");
     }
     if (scrollHeight > 500) {
-      scrollTopButton.classList.add("opacity-1");
-      scrollTopButton.classList.add("visible");
-      scrollTopButton.classList.remove("invisible");
-      scrollTopButton.classList.remove("opacity-0");
+      scrollTopButton == null ? void 0 : scrollTopButton.classList.add("opacity-1");
+      scrollTopButton == null ? void 0 : scrollTopButton.classList.add("visible");
+      scrollTopButton == null ? void 0 : scrollTopButton.classList.remove("invisible");
+      scrollTopButton == null ? void 0 : scrollTopButton.classList.remove("opacity-0");
     } else {
-      scrollTopButton.classList.remove("opacity-1");
-      scrollTopButton.classList.remove("visible");
-      scrollTopButton.classList.add("invisible");
-      scrollTopButton.classList.add("opacity-0");
+      scrollTopButton == null ? void 0 : scrollTopButton.classList.remove("opacity-1");
+      scrollTopButton == null ? void 0 : scrollTopButton.classList.remove("visible");
+      scrollTopButton == null ? void 0 : scrollTopButton.classList.add("invisible");
+      scrollTopButton == null ? void 0 : scrollTopButton.classList.add("opacity-0");
     }
   });
   const currentUrl = window.location.pathname;
@@ -20120,8 +20120,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   }
   const mobileNavListParent = document.querySelectorAll(".mobile-nav-dropdown");
+  const allList = document.querySelectorAll(
+    ".mobile-menu-container .mobile-nav-list"
+  );
   mobileNavListParent.forEach((item) => {
     item.addEventListener("click", function() {
+      allList.forEach((item2) => {
+        item2.classList.remove("mobile-nav-list-active");
+      });
       const mobileNavList = item.querySelector(".mobile-nav-list");
       mobileNavList.classList.toggle("mobile-nav-list-active");
     });
@@ -20320,10 +20326,14 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     tabLinks2 = document.getElementsByClassName("career-tab-links");
     for (i2 = 0; i2 < tabLinks2.length; i2++) {
-      tabLinks2[i2].className = tabLinks2[i2].className.replace("active", "");
+      tabLinks2[i2].classList.remove("text-primary");
+      tabLinks2[i2].classList.remove("border-primary");
     }
     document.getElementById(`content-${tabName}`).style.display = "block";
     document.getElementById(`${tabName}`).style.display = "block";
+    const tab = document.querySelector(`#${tabName}`);
+    tab.classList.add("text-primary");
+    tab.classList.add("border-primary");
   };
   tabLinks.forEach((link) => {
     link.addEventListener("click", (event) => {
